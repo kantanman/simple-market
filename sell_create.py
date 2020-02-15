@@ -1,3 +1,5 @@
+# creates a sell order
+
 import data_struc as ds
 
 def sell_create(price, quantity, market_id):
@@ -18,7 +20,7 @@ def sell_create(price, quantity, market_id):
             matched = {"buy": trade, "sell": i}
             ds.completed_trades.append(matched.copy())
             #trade matched, remove both buy and sell trades and add to completed trade list
-            ds.market_list[market_id].buy.remove(i)            #remove buy trade
+            ds.market_list[market_id].buy.remove(i)              #remove buy trade
             ds.market_list[market_id].sell.remove(trade)         #remove sell trade
 
             print("Trade matched with trade_id: {} for {} units at {} dollars in market {}".format(i.trade_id, i.quantity, i.price, i.market_id))

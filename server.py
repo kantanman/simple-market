@@ -12,6 +12,7 @@ def create_market():
   #  Max = request.form.get('max')
 #  market_id = request.form.get('market_id')
     new_market = market_create(Min, Max, market_id)
+    #return dumps(new_market)
 
 #app.route('/create/buy', methods = ['POST'])
 def create_buy():
@@ -19,3 +20,13 @@ def create_buy():
   #  quantity = request.form.get('quantity')
   #  market_id = request.form.get('market_id')
     new_buy = buy_create(price, quantity, market_id)
+    #return dumps(new_buy)
+
+def create_sell():
+   # price = request.form.get('price')
+  #  quantity = request.form.get('quantity')
+  #  market_id = request.form.get('market_id')
+    new_sell = sell_create(price, quantity, market_id)
+    #return dumps(new_sell)
+
+

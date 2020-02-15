@@ -10,7 +10,5 @@ def market_create(Min, Max):
     
     data_struc.market_list[market.market_id] = market
 
-    
-
     return market
     

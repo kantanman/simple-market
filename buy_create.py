@@ -1,3 +1,5 @@
+# Creates a buy order
+
 import data_struc as ds
 
 def buy_create(price, quantity, market_id):
